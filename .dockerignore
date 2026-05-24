@@ -1,0 +1,35 @@
+#This file prevents unnecessary files from being sent to the Docker daemon during the docker build process. This speeds up your build time and ensures your final container image remains as small and secure as possible
+
+# Git and GitHub Action files
+.git
+.gitignore
+.github/
+
+# Node.js dependencies and logs
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# Environment variables
+.env
+.env.*
+
+# Tests and Coverage
+test/
+tests/
+coverage/
+.nyc_output/
+
+# Deployment & Infrastructure configs (Docker doesn't need these)
+k8s/
+*.tf
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# IDE / OS Files
+.vscode/
+.idea/
+.DS_Store
