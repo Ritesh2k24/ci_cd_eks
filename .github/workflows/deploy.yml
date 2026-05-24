@@ -2,7 +2,7 @@ name: CI/CD Pipeline - Deploy Infra and App to AWS EKS
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 env:
   AWS_REGION: us-east-1                  # Change to your AWS Region
