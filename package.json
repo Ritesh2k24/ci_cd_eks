@@ -1,0 +1,13 @@
+{
+  "name": "simple-node-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js app for EKS deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo 'Running tests...' && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
